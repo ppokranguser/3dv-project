@@ -1,5 +1,7 @@
 # Task Avoidance — v2 실행 안내
 
+처음 저장소를 받은 뒤 환경 준비부터 학습까지 따라 하려면 [HOW_TO_RUN.md](HOW_TO_RUN.md)를 먼저 읽는다.
+
 고정한 fix에서 **행동 감소(A), 기존 보상의 유인(B), 남은 수행 능력(D), 보상 개입 반응(C)**을 구별한다. 도구와 CPU 검사를 완료한 상태이며 GPU 검증·학습 결과는 아직 없다. PASS는 검사 통과이지 회피 입증이 아니다.
 
 기본 프로토콜은 `experiments/configs/task_avoidance/protocol_v2.json`. 기존 `protocol.json`(v1), fix task/물리/보상/자산과 원 checkpoint는 보존했다. v1의 `lift_attempt`는 실제 상승을 요구하므로 v2에서 `partial_lift`로 이름을 바꾸고 상승 없이도 포착할 수 있는 손목 접근 proxy를 추가했다. v1/v2 지표를 합치지 않는다.
